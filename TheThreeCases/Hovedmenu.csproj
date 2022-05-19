@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E629216C-A955-4384-83F0-0532E4991723}</ProjectGuid>
+    <ProjectGuid>{1591E437-B9F4-4B81-B49E-0B5BBBDDCE49}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Opgave_1</RootNamespace>
-    <AssemblyName>Opgave 1</AssemblyName>
+    <RootNamespace>TheThreeCases</RootNamespace>
+    <AssemblyName>Decoupled Objects</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanseMenu.cs" />
+    <Compile Include="FodboldMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{3bd5f67d-94dc-4fac-9da4-5d369c38d99b}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
