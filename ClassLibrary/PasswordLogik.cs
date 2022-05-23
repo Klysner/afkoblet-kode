@@ -8,8 +8,6 @@ namespace ClassLibrary
 {
     public class PasswordLogik
     {
-        public string Pw(string text);
-    {
 
     }
 }
