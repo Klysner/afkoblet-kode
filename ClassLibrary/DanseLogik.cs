@@ -27,8 +27,6 @@ namespace ClassLibrary
     }
 
 }
-// Danser en = new Danser(nm, pts);
-// Danser to = new Danser("{0}" nm, getPoints);
 
 
 

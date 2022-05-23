@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PasswordMenu.cs" />
     <Compile Include="DanseMenu.cs" />
     <Compile Include="FodboldMenu.cs" />
     <Compile Include="Program.cs" />
@@ -56,6 +57,9 @@
       <Project>{3bd5f67d-94dc-4fac-9da4-5d369c38d99b}</Project>
       <Name>ClassLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

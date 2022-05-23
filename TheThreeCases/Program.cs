@@ -10,8 +10,10 @@ namespace TheThreeCases
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Velkommen til hovedmenuen \n Tast 1 for fodboldmenu \n Tast 2 for \n tast 3 for oprettelse af password");
             string tast = Console.ReadLine();
 
+           
             switch (tast)
             {
                 case "1":
@@ -25,7 +27,7 @@ namespace TheThreeCases
 
                 case "3":
 
-                //var pwcracker = new pwcracekr
+                var pw = new PasswordMenu();
                     break;
 
                 default:
