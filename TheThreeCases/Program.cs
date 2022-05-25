@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary;
 
 namespace TheThreeCases
 {
@@ -10,7 +11,12 @@ namespace TheThreeCases
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Velkommen til hovedmenuen \n Tast 1 for fodboldmenu \n Tast 2 for \n tast 3 for oprettelse af password");
+            PasswordLogik obj = new PasswordLogik();
+
+            Console.WriteLine("Log venligst ind for at fortsætte");
+            obj.Login();
+
+            Console.WriteLine("Velkommen til hovedmenuen \n Tast 1 for fodboldmenu \n Tast 2 for dansemenu \n tast 3 for ændring af password og bruger.");
             string tast = Console.ReadLine();
 
 
@@ -22,11 +28,9 @@ namespace TheThreeCases
 
                 case "2":
                     var dancinginthemoonlight = new DanseMenu();
-                    Console.ReadKey();
                     break;
 
                 case "3":
-
                     var pw = new PasswordMenu();
                     break;
 
@@ -35,12 +39,6 @@ namespace TheThreeCases
                     break;
 
             }
-
-
-
-            //1 FOR FODBOLD
-            //2 FOR DANSEKONKURRENCE
-            //3 FOR OPRETTELSE AF GYLDIGT PASSWORD
 
         }
 
